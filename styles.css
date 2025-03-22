@@ -191,3 +191,28 @@ footer {
     color: #ffff;
     margin-top: 20px;
     }
+
+
+/* Media query */
+@media (max-width: 768px) {
+    body {
+        line-height: 1.3em;
+    }
+
+    #portfolio p {
+        line-height: 1.4em;
+    }
+
+    h2 {
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+}
