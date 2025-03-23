@@ -18,6 +18,7 @@ header {
     color: white;
     padding: 2.5rem;
     text-align: center;
+    
 }
 
 
@@ -45,7 +46,7 @@ nav ul li :hover{
 }
 
 section {
-    padding: 2rem;
+    padding: 1rem;
     max-width: 800px;
     margin: auto;
     text-align: center;
@@ -55,12 +56,19 @@ section {
     text-align: center;
     color: white;
     text-decoration: none;
+    
 }
 
 
 #portfolio p {
     line-height: 1.5em;
+    
 }
+
+.text-container {
+    white-space: pre-wrap;
+}
+
 
 
 .e2ftech-link {
@@ -70,6 +78,15 @@ section {
 }
 
 .e2ftech-link:hover {
+    color: #d1d1d1;
+}
+
+.friedrich-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.friedrich-link:hover{
     color: #d1d1d1;
 }
 
@@ -88,6 +105,7 @@ section {
     overflow: hidden;
     border-radius: 10px;
     width: 45%;
+    box-shadow: 4px 4px 0 #1f2029;
 }
 
 .portfolio-item img {
@@ -135,14 +153,37 @@ section {
     color: white;
     background-color: #8377b7; 
     border-radius: 8px;
-    transition: background 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    position: relative;
+    border: 3px solid #6b5b95;
+    box-shadow: 4px 4px 0 #1f2029; /* Sombra */
+}
 
-    
+
+
+/* Efecto cuando se presiona el botón */
+.btn a:active {
+    box-shadow: 2px 2px #1f2129, 4px 4px #000;
+    transform: translate(4px, 4px); /* Simula el hundimiento del botón */
 }
 
 .btn a:hover {
-    background-color: #6b5b95; 
+    background-color: #6b5b95;
 }
+
+.btn-header a{
+    
+    display: inline-block;
+    background-color: #8377b7;
+    border: 3px solid #6b5b95;
+    box-shadow: 4px 4px #1f2029;
+    padding: 14px 28px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+
 
 #contact {
     text-align: center; 
@@ -194,31 +235,5 @@ footer {
 
 
 /* Media query */
-@media (max-width: 768px) {
-    body {
-        line-height: 1.3em;
-        font-size: 16px;
-    }
 
-    #portfolio p {
-        line-height: 1.4em;
-        font-size: 20px;
-    }
-    
-    h1 {
-        line-height: 20px;
-    }
 
-    h2 {
-        word-wrap: break-word;
-        text-align: center;
-    }
-
-    section {
-        padding: 1.5rem;
-    }
-
-    p {
-        margin-bottom: 15px;
-    }
-}
