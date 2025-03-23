@@ -21,6 +21,15 @@ header {
     
 }
 
+.header-img {
+    max-width: 100%; 
+    height: auto; /* Mantiene la proporción */
+    max-height: 200px; /* Ajusta la altura máxima según sea necesario */
+    display: block;
+    margin: 0 auto; /* Centra la imagen dentro del header */
+}
+
+
 
 nav ul {
     list-style: none;
@@ -362,4 +371,11 @@ section {
         padding: 2rem 1rem;
         margin-bottom: 2rem; 
         }
+    
+    @media (max-width: 768px) {
+    .header-img {
+        max-height: 100px; /* Reduce el tamaño en pantallas pequeñas */
+    }
+}
+
     }
