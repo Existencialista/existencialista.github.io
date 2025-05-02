@@ -21,6 +21,16 @@ header {
     
 }
 
+
+.btn-header-container {
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    gap: 20px; /* espacio entre botones */
+    margin-top: 20px; /* opcional */
+    flex-wrap: wrap; /* para que se acomoden si no hay espacio */
+}
+
+
 .header-img {
     max-width: 100%; 
     height: auto; /* Mantiene la proporción */
@@ -196,9 +206,22 @@ section {
   background-color: #6b5b95;  
 }
 
-btn-header a:active {
+.btn-header a:active {
     box-shadow: 2px 2px #1f2129, 4px 4px #000;
     transform: translate(4px, 4px); /* Simula el hundimiento del botón */
+}
+
+.website-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+}
+
+.website-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #contact {
