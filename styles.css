@@ -89,6 +89,19 @@ section {
 }
 
 
+.website-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 #1f2029;
+    transition: transform 0.3s ease-in-out;
+    margin: auto;
+    
+}
+
+.website-img img:hover {
+    transform: scale(1.05);
+}
 
 .e2ftech-link {
     color: white;
@@ -143,6 +156,47 @@ section {
     opacity: 1;
     
     }
+
+
+#website-portfolio {
+  line-height: 1.5em;
+  text-align: center;
+}
+
+
+
+.web-portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 20px;
+  max-width: 800px;
+}
+
+.web-portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 #1f2029;
+}
+
+.web-portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.web-portfolio-item:hover img{
+    transform: scale(1.1);
+    filter: blur(5px);
+}
+
+.web-portfolio-item:hover .overlay {
+    opacity: 1;
+    
+    }
+
+
 
 .overlay {
     position: absolute;
@@ -211,17 +265,11 @@ section {
     transform: translate(4px, 4px); /* Simula el hundimiento del botón */
 }
 
-.website-container {
-    display: flex;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto 20px auto;
-}
-
-.website-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.powered-by {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    
 }
 
 #contact {
